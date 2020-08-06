@@ -1,16 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
-
+import PageHeader from '../../components/PageHeader';
 
 import './styles.css'
-import PageHeader from '../../components/PageHeader';
+
 
 function TeacherList() {
     return (
         <div id="page-teacher-list" className="container">
-            <PageHeader />
-
+            <PageHeader title="Estes são os proffys disponíveis."/>
         </div>
     )
 }
