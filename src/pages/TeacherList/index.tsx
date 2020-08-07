@@ -4,6 +4,8 @@ import PageHeader from '../../components/PageHeader';
 
 import TeacherItem from '../../components/TeachersItem';
 
+import Input from '../../components/Input'
+
 import './styles.css'
 
 function TeacherList() {
@@ -12,24 +14,14 @@ function TeacherList() {
             <PageHeader title="Estes são os proffys disponíveis.">
 
                 <form id="search-teachers">
-                    <div className="input-block">
-                        <label htmlFor="subject">Matéria</label>
-                        <input type="text" id="subject" />
-                    </div>
+                    <Input name="subject" label="Máteria" />
+                    <Input name="week_day" label="Dia da Semana" />
+                    <Input type="time" name="time" label="Hora" />
 
-                    <div className="input-block">
-                        <label htmlFor="subject">Dia da Semana</label>
-                        <input type="text" id="week_day" />
-                    </div>
-
-                    <div className="input-block">
-                        <label htmlFor="subject">Hora</label>
-                        <input type="text" id="time" />
-                    </div>
                 </form>
             </PageHeader>
             <main>
-            <TeacherItem />
+                <TeacherItem />
             </main>
         </div>
     )
